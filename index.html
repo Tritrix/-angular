@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html data-ng-app="Tipster">
+
+<head>
+    <title>Gambler Unite</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS Libraries   -->
+    <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libraries/css/styles.css">
+    <link rel="stylesheet" href="libraries/css/animate.css">
+    <link rel="stylesheet" href="libraries/css/fonts.css">
+    <link rel="stylesheet" href="libraries/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libraries/plugins/responsive-tables/rwd-table.min.css">      
+    <link href="libraries/css/xeditable.css" rel="stylesheet">
+    
+    
+</head>
+
+<body data-ng-controller="AppController">
+    <alert class="col-md-offset-4 col-md-4 text-center" style="position:fixed;">{{notificationMsg}}</alert>
+    <div ui-view></div>
+        
+   
+
+    <!-- Script tags to include libraries   -->
+    <script type="text/javascript" src="libraries/js/jquery.js"></script>    
+    <script type="text/javascript" src="libraries/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="libraries/js/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="libraries/plugins/angular-xeditable-0.1.8/js/xeditable.js"></script> 
+    <script type="text/javascript" src="libraries/js/angular-ui-router/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="libraries/js/ngstorage/ngStorage.min.js"></script> 
+    <script type="text/javascript" src="libraries/js/scripts.js"></script> 
+    <script type="text/javascript" src="libraries/plugins/responsive-tables/rwd-table.min.js"></script> 
+    
+    <!-- Main App JS   -->
+    <script type="text/javascript" src="app/app.js"></script>
+    
+    <!-- Controller JS   -->
+    <script type="text/javascript" src="app/global/AppController.js"></script>
+    <script type="text/javascript" src="app/home/HomeController.js"></script>
+    <script type="text/javascript" src="app/login/LoginController.js"></script>
+    <script type="text/javascript" src="app/signup/SignupController.js"></script>
+    <script type="text/javascript" src="app/logout/LogoutController.js"></script>
+    
+    <!-- Services JS   -->
+    <script type="text/javascript" src="app/global/DataService.js"></script>
+    <script type="text/javascript" src="app/global/RoutingService.js"></script>
+    <script type="text/javascript" src="app/home/HomeService.js"></script>
+    <script type="text/javascript" src="app/login/LoginService.js"></script>
+    <script type="text/javascript" src="app/signup/SignupService.js"></script>
+    <script type="text/javascript" src="app/logout/LogoutService.js"></script>
+    
+    <!-- Factory JS   -->
+    
+    <!-- Directive JS   -->
+    
+    <script>
+    $(function () {
+        $('.table-responsive').responsiveTable();
+    });
+</script>
+</body>
+
+</html>

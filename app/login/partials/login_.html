@@ -1,0 +1,28 @@
+<div class="landing-bg">
+    <div class="row">
+        <div class="container">
+            <center>
+                <div class='landing-form animated flipInX'>
+                    <div class="landing-logo-bg flipInY">
+                        <center><img class="landing-logo" src="img/Tipster%20Logo.png" alt="">
+                        </center>
+
+                    </div>
+                    <div class="p10 m10" data-ng-controller="LoginController">
+                        <h2>Login To Your Account</h2>
+                        <form name="loginForm" ng-submit="login(credentials)">
+<!--                            <input placeholder='Username' type='text'>-->
+                            <input type="text" placeholder='Username' name="username" ng-model="credentials.username" ng-model-options="{debounce:{ 'default':500} }">   
+<!--                            <input placeholder='Password' type='password'>-->
+                            <input type="password" placeholder="Password" name="password" ng-model="credentials.password" ng-model-options="{debounce:{ 'default':500} }"> 
+                            <a href="" class="m10">Forgot password?</a>
+                            <button>Login</button>
+                            <h4><a ui-sref="signup">Create account</a></h4>
+                        </form>
+                    </div>
+                </div>
+            </center>
+
+        </div>
+    </div>
+</div>

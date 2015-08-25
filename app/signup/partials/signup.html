@@ -1,0 +1,30 @@
+<div class="container landing-bg">
+    <div class="row">
+        <center>
+            <div class='landing-form animated flipInX'>
+                <div class="landing-logo-bg p20">
+                    <center>
+                        <img class="landing-logo" src="img/Tipster%20Logo.png" alt="">
+                    </center>
+
+                </div>
+                <div class="p10 m10"  data-ng-controller="SignupController">
+                    <h2>SignUp for a New Account</h2>
+                    <form ng-submit="signup(signupDetails)">
+                        <input name="username" ng-model="signupDetails.username" placeholder='Username' type='text' required>
+                        <input name="email" ng-model="signupDetails.email" placeholder='Email' type='text' required>
+                        <input name="mobile" ng-model="signupDetails.mobile" placeholder='Mobile' type='number' required>
+                        <select name="country" ng-model="signupDetails.country" placeholder='Country' type='text' required>
+                            <option value="uk" selected="selected">United Kingdom</option>
+                            <option value="eu">European Union</option>
+                        </select>
+                        <input name="password" ng-model="signupDetails.password" placeholder='Password' type='password' required>
+                        <input name="confirmPassword" ng-model="signupDetails.confirmPassword" placeholder='Confirm Password' type='password' required>
+                        <button>SignUp</button>
+                    </form>
+                </div>
+            </div>
+        </center>
+
+    </div>
+</div>
